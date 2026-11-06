@@ -19,7 +19,7 @@ import { LynkOmniLogoAuto, LynkOmniEmblemMono } from '@lynkomni/icons';
 ## Plain SVG, email and documents
 
 Use `@lynkomni/icons/svg/lynkomni-logo-light.svg` (or `dark`, `mono`...). For email and PDFs use the PNGs
-in `email/` (`logo-light.png`, `logo-light@2x.png`, and the dark pair). Embed them; do not link to them.
+in `email/` (`logo-light.png`, `logo-light@2x.png`, and the dark pair), plus the wordmark for email footers (`wordmark-light.png`, `wordmark-light@2x.png`, and the dark pair). Embed them; do not link to them.
 
 ## Web app and PWA
 

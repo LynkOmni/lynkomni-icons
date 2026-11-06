@@ -43,6 +43,10 @@
     { "out": "email/logo-light.png", "asset": "logo", "variant": "light", "width": 200, "height": null },
     { "out": "email/logo-light@2x.png", "asset": "logo", "variant": "light", "width": 400, "height": null },
     { "out": "email/logo-dark.png", "asset": "logo", "variant": "dark", "width": 200, "height": null },
-    { "out": "email/logo-dark@2x.png", "asset": "logo", "variant": "dark", "width": 400, "height": null }
+    { "out": "email/logo-dark@2x.png", "asset": "logo", "variant": "dark", "width": 400, "height": null },
+    { "out": "email/wordmark-light.png", "asset": "wordmark", "variant": "light", "width": 160, "height": null },
+    { "out": "email/wordmark-light@2x.png", "asset": "wordmark", "variant": "light", "width": 320, "height": null },
+    { "out": "email/wordmark-dark.png", "asset": "wordmark", "variant": "dark", "width": 160, "height": null },
+    { "out": "email/wordmark-dark@2x.png", "asset": "wordmark", "variant": "dark", "width": 320, "height": null }
   ]
 }

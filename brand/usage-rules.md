@@ -21,6 +21,33 @@ automatically on every pull request.
 - Never stretch, rotate, recolour, outline, add shadows, or place on photos or busy patterns.
 - Never draw a product name inside the image. The name is always text beside the mark.
 
+## Which asset to use where
+
+Three assets, each in every theme: **logo** (emblem plus wordmark), **emblem** (symbol only), **wordmark** (the word "LynkOmni" only).
+
+1. **Logo** is the default whenever the brand introduces itself and there is room.
+2. **Emblem** is for small, square or crowded spaces, and anywhere the name is already written next to it.
+3. **Wordmark** is for places that need the name read, not recognised, or where the symbol is already shown close by.
+
+| Where | Asset |
+| --- | --- |
+| Website and dashboard header | Logo; emblem when under 96 px wide |
+| Footer, login, onboarding, hero, status page, docs header | Logo |
+| Side menu | Logo; emblem when collapsed |
+| App icon, splash screen, favicon, browser tab, install icon, profile picture | Emblem |
+| Top bar inside a product app | Emblem plus the product name as text |
+| Loading and empty screens, chat launcher | Emblem |
+| Notification icon, stamps, watermarks | Emblem, one colour |
+| Invoice header (LynkOmni branding tier) | Logo, one colour in print |
+| Printed receipts (58 and 80 mm) | Wordmark, one colour |
+| Email header | Logo (embedded image) |
+| Email footer, "Powered by LynkOmni", partner lockups | Wordmark |
+| Share image for links | Logo |
+
+Never place the emblem and the wordmark side by side to rebuild the logo: use the logo. Never draw a product
+name inside the image. The platform repo holds the machine-readable version (`brand/surfaces.v1.json`) and
+checks it on every pull request.
+
 ## Contrast (measured)
 
 The brand must have at least 3:1 contrast against the background (WCAG 2.2 AA for graphics).
