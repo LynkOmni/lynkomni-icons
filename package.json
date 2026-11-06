@@ -7,8 +7,14 @@
   "main": "./dist/react/index.js",
   "types": "./dist/react/index.d.ts",
   "exports": {
-    ".": { "types": "./dist/react/index.d.ts", "default": "./dist/react/index.js" },
-    "./brand": { "types": "./dist/brand/index.d.ts", "default": "./dist/brand/index.js" },
+    ".": {
+      "types": "./dist/react/index.d.ts",
+      "default": "./dist/react/index.js"
+    },
+    "./brand": {
+      "types": "./dist/brand/index.d.ts",
+      "default": "./dist/brand/index.js"
+    },
     "./brand.json": "./dist/brand.json",
     "./svg/*": "./dist/svg/*",
     "./web/*": "./dist/web/*",
@@ -16,9 +22,17 @@
     "./android/*": "./dist/android/*",
     "./ios/*": "./dist/ios/*",
     "./package.json": "./package.json",
-    "./*": { "types": "./dist/react/*.d.ts", "default": "./dist/react/*.js" }
+    "./*": {
+      "types": "./dist/react/*.d.ts",
+      "default": "./dist/react/*.js"
+    }
   },
-  "files": ["dist", "brand", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "brand",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LynkOmni/lynkomni-icons.git"
@@ -43,7 +57,9 @@
     "react": ">=18"
   },
   "peerDependenciesMeta": {
-    "react": { "optional": true }
+    "react": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
