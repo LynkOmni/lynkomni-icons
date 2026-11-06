@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.0...v1.0.1) (2026-11-06)
+
+
+### Bug Fixes
+
+* update README status after phase A ([e6dc36f](https://github.com/LynkOmni/lynkomni-icons/commit/e6dc36f641be3d3040e4bc0453f10e86ab5fdf9c))
+
 # 1.0.0 (2026-11-06)
 
 
