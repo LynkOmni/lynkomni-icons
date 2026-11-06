@@ -52,3 +52,14 @@ brand.assets.logo.minWidthPx; // 96
 ## Offline
 
 Everything above is bundled at build time. No product may load a brand file over the network at run time.
+
+## Icons: product marks, status icons, core UI icons
+
+43 one-colour outline icons on a 24 grid, drawn as drafts for designer review. They use `currentColor`, so they take the surrounding text colour and follow every theme; there are no light/dark variants.
+
+- `status-*` (queued, sent, accepted, confirmed, failed) are the five states users ever see. Each has its own shape, so state is never shown by colour alone. Always show the word beside the icon, or give it an accessible name.
+- `ui-*` are the core app icons (home, search, menu, offline, sync, QR and so on).
+- `product-*` are product marks with no name drawn inside. The product name is always real text next to the mark.
+
+React: `import { StatusQueuedIcon } from '@lynkomni/icons/icons/react'` (hidden from screen readers by default; pass `aria-label` and `role="img"` when the icon stands alone). Android: `lynkomni_icon_*` vector drawables. iOS: `LynkOmniIcons.xcassets` (template images). SVG: `icons/lynkomni-icon-<id>.svg`. The index of ids, groups and accessible names is `icons` in `brand.json`.
+Add an icon by dropping an SVG in `src/<group>/` and listing it in `brand/icons.v1.json`; the gates check safety, grid, size, a single path, and (for status) distinct shapes.

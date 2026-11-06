@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "description": "Product marks, status icons and core UI icons. One-colour outline icons on a 24 grid that take the surrounding text colour. Drafts for designer review.",
+  "grid": 24,
+  "strokeWidth": 2,
+  "icons": [
+    {
+      "id": "status-queued",
+      "group": "states",
+      "accessibleName": "Queued",
+      "source": "src/states/lynkomni-status-queued.svg"
+    },
+    {
+      "id": "status-sent",
+      "group": "states",
+      "accessibleName": "Sent",
+      "source": "src/states/lynkomni-status-sent.svg"
+    },
+    {
+      "id": "status-accepted",
+      "group": "states",
+      "accessibleName": "Accepted",
+      "source": "src/states/lynkomni-status-accepted.svg"
+    },
+    {
+      "id": "status-confirmed",
+      "group": "states",
+      "accessibleName": "Confirmed",
+      "source": "src/states/lynkomni-status-confirmed.svg"
+    },
+    {
+      "id": "status-failed",
+      "group": "states",
+      "accessibleName": "Failed",
+      "source": "src/states/lynkomni-status-failed.svg"
+    },
+    {
+      "id": "ui-home",
+      "group": "ui",
+      "accessibleName": "Home",
+      "source": "src/ui/lynkomni-ui-home.svg"
+    },
+    {
+      "id": "ui-search",
+      "group": "ui",
+      "accessibleName": "Search",
+      "source": "src/ui/lynkomni-ui-search.svg"
+    },
+    {
+      "id": "ui-menu",
+      "group": "ui",
+      "accessibleName": "Menu",
+      "source": "src/ui/lynkomni-ui-menu.svg"
+    },
+    {
+      "id": "ui-close",
+      "group": "ui",
+      "accessibleName": "Close",
+      "source": "src/ui/lynkomni-ui-close.svg"
+    },
+    {
+      "id": "ui-plus",
+      "group": "ui",
+      "accessibleName": "Add",
+      "source": "src/ui/lynkomni-ui-plus.svg"
+    },
+    {
+      "id": "ui-minus",
+      "group": "ui",
+      "accessibleName": "Remove",
+      "source": "src/ui/lynkomni-ui-minus.svg"
+    },
+    {
+      "id": "ui-check",
+      "group": "ui",
+      "accessibleName": "Done",
+      "source": "src/ui/lynkomni-ui-check.svg"
+    },
+    {
+      "id": "ui-chevron-right",
+      "group": "ui",
+      "accessibleName": "Next",
+      "source": "src/ui/lynkomni-ui-chevron-right.svg"
+    },
+    {
+      "id": "ui-chevron-down",
+      "group": "ui",
+      "accessibleName": "Expand",
+      "source": "src/ui/lynkomni-ui-chevron-down.svg"
+    },
+    {
+      "id": "ui-arrow-left",
+      "group": "ui",
+      "accessibleName": "Back",
+      "source": "src/ui/lynkomni-ui-arrow-left.svg"
+    },
+    {
+      "id": "ui-bell",
+      "group": "ui",
+      "accessibleName": "Notifications",
+      "source": "src/ui/lynkomni-ui-bell.svg"
+    },
+    {
+      "id": "ui-user",
+      "group": "ui",
+      "accessibleName": "Account",
+      "source": "src/ui/lynkomni-ui-user.svg"
+    },
+    {
+      "id": "ui-lock",
+      "group": "ui",
+      "accessibleName": "Locked",
+      "source": "src/ui/lynkomni-ui-lock.svg"
+    },
+    {
+      "id": "ui-offline",
+      "group": "ui",
+      "accessibleName": "Offline",
+      "source": "src/ui/lynkomni-ui-offline.svg"
+    },
+    {
+      "id": "ui-sync",
+      "group": "ui",
+      "accessibleName": "Sync",
+      "source": "src/ui/lynkomni-ui-sync.svg"
+    },
+    {
+      "id": "ui-trash",
+      "group": "ui",
+      "accessibleName": "Delete",
+      "source": "src/ui/lynkomni-ui-trash.svg"
+    },
+    {
+      "id": "ui-edit",
+      "group": "ui",
+      "accessibleName": "Edit",
+      "source": "src/ui/lynkomni-ui-edit.svg"
+    },
+    {
+      "id": "ui-info",
+      "group": "ui",
+      "accessibleName": "Information",
+      "source": "src/ui/lynkomni-ui-info.svg"
+    },
+    {
+      "id": "ui-warning",
+      "group": "ui",
+      "accessibleName": "Warning",
+      "source": "src/ui/lynkomni-ui-warning.svg"
+    },
+    {
+      "id": "ui-qr",
+      "group": "ui",
+      "accessibleName": "QR code",
+      "source": "src/ui/lynkomni-ui-qr.svg"
+    },
+    {
+      "id": "ui-cart",
+      "group": "ui",
+      "accessibleName": "Cart",
+      "source": "src/ui/lynkomni-ui-cart.svg"
+    },
+    {
+      "id": "ui-receipt",
+      "group": "ui",
+      "accessibleName": "Receipt",
+      "source": "src/ui/lynkomni-ui-receipt.svg"
+    },
+    {
+      "id": "product-pos",
+      "group": "products",
+      "accessibleName": "Point of sale",
+      "source": "src/products/lynkomni-product-pos.svg"
+    },
+    {
+      "id": "product-ledger",
+      "group": "products",
+      "accessibleName": "Accountant",
+      "source": "src/products/lynkomni-product-ledger.svg"
+    },
+    {
+      "id": "product-stock",
+      "group": "products",
+      "accessibleName": "Inventory",
+      "source": "src/products/lynkomni-product-stock.svg"
+    },
+    {
+      "id": "product-rewards",
+      "group": "products",
+      "accessibleName": "Loyalty",
+      "source": "src/products/lynkomni-product-rewards.svg"
+    },
+    {
+      "id": "product-dash",
+      "group": "products",
+      "accessibleName": "Dashboard",
+      "source": "src/products/lynkomni-product-dash.svg"
+    },
+    {
+      "id": "product-grow",
+      "group": "products",
+      "accessibleName": "Growth",
+      "source": "src/products/lynkomni-product-grow.svg"
+    },
+    {
+      "id": "product-chat",
+      "group": "products",
+      "accessibleName": "Chat",
+      "source": "src/products/lynkomni-product-chat.svg"
+    },
+    {
+      "id": "product-mpay",
+      "group": "products",
+      "accessibleName": "Merchant payments",
+      "source": "src/products/lynkomni-product-mpay.svg"
+    },
+    {
+      "id": "product-recover",
+      "group": "products",
+      "accessibleName": "Payment recovery",
+      "source": "src/products/lynkomni-product-recover.svg"
+    },
+    {
+      "id": "product-checkout",
+      "group": "products",
+      "accessibleName": "Pay links and invoices",
+      "source": "src/products/lynkomni-product-checkout.svg"
+    },
+    {
+      "id": "product-assist",
+      "group": "products",
+      "accessibleName": "Assistant",
+      "source": "src/products/lynkomni-product-assist.svg"
+    },
+    {
+      "id": "product-vcard",
+      "group": "products",
+      "accessibleName": "Virtual card",
+      "source": "src/products/lynkomni-product-vcard.svg"
+    },
+    {
+      "id": "product-booking",
+      "group": "products",
+      "accessibleName": "Bookings",
+      "source": "src/products/lynkomni-product-booking.svg"
+    },
+    {
+      "id": "product-essential",
+      "group": "products",
+      "accessibleName": "Essentials",
+      "source": "src/products/lynkomni-product-essential.svg"
+    },
+    {
+      "id": "product-dev",
+      "group": "products",
+      "accessibleName": "Developers",
+      "source": "src/products/lynkomni-product-dev.svg"
+    },
+    {
+      "id": "product-suite",
+      "group": "products",
+      "accessibleName": "Suite",
+      "source": "src/products/lynkomni-product-suite.svg"
+    }
+  ]
+}

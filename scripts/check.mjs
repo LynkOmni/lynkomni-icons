@@ -11,6 +11,7 @@ import { fileURLToPath } from 'node:url';
 import { ROOT, loadConfig, loadAsset, THEME_VARIANTS, ALL_VARIANTS } from './build.mjs';
 import { parseSvg, walk, viewBoxOf } from './lib/svg.mjs';
 import { contrast } from './lib/color.mjs';
+import { checkIcons } from './icons.mjs';
 
 export const MIN_CONTRAST = 3; // WCAG 2.2 AA, non-text contrast for graphical objects
 
@@ -129,6 +130,7 @@ export function sourceGates(root = ROOT) {
   }
 
   problems.push(...checkNaming(root));
+  problems.push(...checkIcons(root).map((m) => `icons: ${m}`));
 
   for (const f of ['README.md', 'LICENSE', 'SECURITY.md', 'CHANGELOG.md', '.github/CODEOWNERS', '.github/workflows/ci.yml', '.github/workflows/release.yml', 'brand/usage-rules.md']) {
     if (!existsSync(join(root, f))) add('repo', `missing ${f}`);
@@ -170,6 +172,13 @@ export function distGates(root = ROOT, { rasters = false } = {}) {
     if (boxes.size > 1) add(`asset ${a.id}`, `variants have different view boxes: ${[...boxes].join(' | ')}`);
     if (!existsSync(join(dist, `react/${entry.auto.react}.js`))) add(`asset ${a.id}`, 'themed (Auto) component missing');
   }
+
+  for (const [id, e] of Object.entries(brand.icons || {})) {
+    for (const rel of [e.svg, `icons/react/${e.react}.js`, `icons/react/${e.react}.d.ts`, `android/res/drawable/${e.android}.xml`, `ios/LynkOmniIcons.xcassets/${e.ios}.imageset/Contents.json`]) {
+      if (!existsSync(join(dist, rel))) add(`icon ${id}`, `missing dist/${rel}`);
+    }
+  }
+  if (!brand.icons || Object.keys(brand.icons).length === 0) add('dist', 'brand.json has no icons');
 
   const fav = join(dist, 'web/favicon.svg');
   if (!existsSync(fav)) add('dist', 'web/favicon.svg missing');

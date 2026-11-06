@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseSvg, viewBoxOf, drawTree, geometrySignature } from './lib/svg.mjs';
+import { addIconFiles } from './icons.mjs';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -279,6 +280,8 @@ export function build({ root = ROOT, outDir = join(root, 'dist') } = {}) {
     `// ${GENERATED}\nexport const brand = Object.freeze(${JSON.stringify(core, null, 2)});\n\nexport default brand;\n`,
   );
   files.set('brand/index.d.ts', brandTypes(manifest.assets.map((a) => a.id)));
+
+  core.icons = addIconFiles(root, files);   // product marks, status icons, core UI icons
 
   // Checksums let the platform repo prove it holds exactly this release (brand.lock.json).
   const sums = {};
