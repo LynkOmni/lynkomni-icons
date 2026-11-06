@@ -1,0 +1,31 @@
+name: lockfile
+
+# Manual. Writes package-lock.json from package.json so Dependabot can read exact versions and CI uses `npm ci`.
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  lock:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Write the lockfile
+        run: npm install --package-lock-only --ignore-scripts
+
+      - name: Commit it
+        run: |
+          git config user.name "lynkomni-lockfile-bot"
+          git config user.email "lockfile-bot@users.noreply.github.com"
+          git add package-lock.json
+          git diff --cached --quiet && echo "lockfile already up to date" && exit 0
+          git commit -m "chore(deps): add package-lock.json [skip ci]"
+          git push origin HEAD:main
