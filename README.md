@@ -56,5 +56,5 @@ review). `docs/contributing.md` explains how a change becomes a release.
 
 ## Status
 
-Phase A of the logos and icons plan. Product marks, status icons and the core UI icon set (phase C) will
-be added under `src/products/`, `src/states/` and `src/ui/`.
+Phase A is complete: manifest, build, gates, CI and release. Product marks, status icons and the core UI
+icon set (phase C) will be added under `src/products/`, `src/states/` and `src/ui/`.
