@@ -17,9 +17,9 @@ export const THEME_VARIANTS = ['light', 'dark', 'contrast-light', 'contrast-dark
 export const ALL_VARIANTS = [...THEME_VARIANTS, 'mono'];
 
 const SUFFIX = { light: 'Light', dark: 'Dark', 'contrast-light': 'ContrastLight', 'contrast-dark': 'ContrastDark', mono: 'Mono', auto: 'Auto' };
-// Themed ("auto") shapes read the platform design tokens (--brand-ink, then --text-primary, and --brand-primary),
+// Themed ("auto") shapes read the platform design tokens (--logo-ink, then --text-primary, and --brand-primary),
 // so they follow every theme with no JavaScript.
-const TOKEN_FOR_ROLE = { ink: '--brand-ink', accent: '--brand-primary' };
+const TOKEN_FOR_ROLE = { ink: '--logo-ink', accent: '--brand-primary' };
 
 export function loadConfig(root = ROOT) {
   const manifest = JSON.parse(readFileSync(join(root, 'brand/manifest.v1.json'), 'utf8'));
@@ -83,7 +83,7 @@ function faviconSvg(tree, vb, themes) {
 }
 
 const themedFill = (role, fallback) =>
-  role === 'ink' ? `var(--brand-ink, var(--text-primary, ${fallback}))` : `var(${TOKEN_FOR_ROLE[role]}, ${fallback})`;
+  role === 'ink' ? `var(--logo-ink, var(--text-primary, ${fallback}))` : `var(${TOKEN_FOR_ROLE[role]}, ${fallback})`;
 
 // ---------- React (plain JS, no JSX, so it works in any bundler and on the server) ----------
 function reactOf(name, tree, vb, label, colour, themed) {
@@ -257,7 +257,7 @@ export function build({ root = ROOT, outDir = join(root, 'dist') } = {}) {
       entry.variants[variant] = { svg: `svg/${svgName}`, react: reactName, android: androidName, ios: iosName };
     }
 
-    // Themed component: reads the platform design tokens (--brand-ink, --brand-primary).
+    // Themed component: reads the platform design tokens (--logo-ink, --brand-primary).
     const autoName = asset.component + SUFFIX.auto;
     files.set(`react/${autoName}.js`, reactOf(autoName, tree, vb, asset.accessibleName, (role) => themes.light[role], true));
     files.set(`react/${autoName}.d.ts`, `export { ${autoName} as default, ${autoName} } from './index.js';\n`);
