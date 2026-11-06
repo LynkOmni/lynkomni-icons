@@ -261,6 +261,42 @@
       "group": "products",
       "accessibleName": "Suite",
       "source": "src/products/lynkomni-product-suite.svg"
+    },
+    {
+      "id": "ui-pay-card",
+      "group": "ui",
+      "accessibleName": "Card payment",
+      "source": "src/ui/lynkomni-ui-pay-card.svg"
+    },
+    {
+      "id": "ui-pay-mobile-money",
+      "group": "ui",
+      "accessibleName": "Mobile money",
+      "source": "src/ui/lynkomni-ui-pay-mobile-money.svg"
+    },
+    {
+      "id": "ui-pay-bank",
+      "group": "ui",
+      "accessibleName": "Bank transfer",
+      "source": "src/ui/lynkomni-ui-pay-bank.svg"
+    },
+    {
+      "id": "ui-pay-instant",
+      "group": "ui",
+      "accessibleName": "Instant bank payment",
+      "source": "src/ui/lynkomni-ui-pay-instant.svg"
+    },
+    {
+      "id": "ui-pay-wallet",
+      "group": "ui",
+      "accessibleName": "Phone wallet",
+      "source": "src/ui/lynkomni-ui-pay-wallet.svg"
+    },
+    {
+      "id": "ui-pay-crypto",
+      "group": "ui",
+      "accessibleName": "Digital asset payment",
+      "source": "src/ui/lynkomni-ui-pay-crypto.svg"
     }
   ]
 }
