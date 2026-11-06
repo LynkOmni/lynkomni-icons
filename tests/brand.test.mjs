@@ -90,12 +90,12 @@ test('generated SVGs have no fixed size, an accessible name, and the same view b
   }
 });
 
-test('mono uses currentColor and themed React reads the platform tokens', () => {
+test('mono uses currentColor and themed React reads the platform tokens (brand-ink first)', () => {
   const out = tmp();
   build({ root: ROOT, outDir: out });
   assert.match(readFileSync(join(out, 'svg/lynkomni-logo-mono.svg'), 'utf8'), /fill="currentColor"/);
   const auto = readFileSync(join(out, 'react/LynkOmniLogoAuto.js'), 'utf8');
-  assert.match(auto, /var\(--text-primary, #18181B\)/);
+  assert.match(auto, /var\(--brand-ink, var\(--text-primary, #18181B\)\)/);
   assert.match(auto, /var\(--brand-primary, #7C4DFF\)/);
   assert.match(auto, /\.\.\.props/);
 });

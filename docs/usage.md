@@ -10,7 +10,7 @@ import { LynkOmniLogoAuto, LynkOmniEmblemMono } from '@lynkomni/icons';
 ```
 
 - Components are plain `svg` elements, so they work with server rendering and any bundler.
-- `...Auto` reads `--text-primary` and `--brand-primary` from the platform tokens (light, dark and high
+- `...Auto` reads `--brand-ink` (falling back to `--text-primary`) and `--brand-primary` from the platform tokens (light, dark and high
   contrast). Outside the platform, pick `Light` or `Dark` yourself.
 - Size with CSS (`height` or `width`); the artwork keeps its proportions.
 - Each one is announced as "LynkOmni". For a purely decorative copy, pass `aria-hidden="true"
