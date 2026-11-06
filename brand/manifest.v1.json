@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "package": "@lynkomni/icons",
+  "description": "Every LynkOmni brand asset. The build and the gates read only this file and the SVGs it points to.",
+  "variants": ["light", "dark", "contrast-light", "contrast-dark", "mono"],
+  "assets": [
+    {
+      "id": "emblem",
+      "component": "LynkOmniEmblem",
+      "kind": "emblem",
+      "accessibleName": "LynkOmni",
+      "sources": { "light": "src/logos/lynkomni-emblem-light.svg", "dark": "src/logos/lynkomni-emblem-dark.svg" },
+      "minWidthPx": 24,
+      "sizeBudgetBytes": 20000
+    },
+    {
+      "id": "logo",
+      "component": "LynkOmniLogo",
+      "kind": "logo",
+      "accessibleName": "LynkOmni",
+      "sources": { "light": "src/logos/lynkomni-logo-light.svg", "dark": "src/logos/lynkomni-logo-dark.svg" },
+      "minWidthPx": 96,
+      "sizeBudgetBytes": 12000
+    },
+    {
+      "id": "wordmark",
+      "component": "LynkOmniWordmark",
+      "kind": "wordmark",
+      "accessibleName": "LynkOmni",
+      "sources": { "light": "src/logos/lynkomni-wordmark-light.svg", "dark": "src/logos/lynkomni-wordmark-dark.svg" },
+      "minWidthPx": 80,
+      "sizeBudgetBytes": 12000
+    }
+  ],
+  "rasters": [
+    { "out": "web/favicon-32.png", "asset": "emblem", "variant": "light", "width": 32, "height": 32, "padding": 0.04 },
+    { "out": "web/favicon.ico", "type": "ico", "asset": "emblem", "variant": "light", "sizes": [16, 32, 48] },
+    { "out": "web/apple-touch-icon-180.png", "asset": "emblem", "variant": "light", "width": 180, "height": 180, "padding": 0.22, "background": "#FFFFFF" },
+    { "out": "web/pwa-192.png", "asset": "emblem", "variant": "light", "width": 192, "height": 192, "padding": 0.14, "background": "#FFFFFF" },
+    { "out": "web/pwa-512.png", "asset": "emblem", "variant": "light", "width": 512, "height": 512, "padding": 0.14, "background": "#FFFFFF" },
+    { "out": "web/pwa-maskable-512.png", "asset": "emblem", "variant": "light", "width": 512, "height": 512, "padding": 0.30, "background": "#FFFFFF" },
+    { "out": "web/og-1200x630.png", "asset": "logo", "variant": "light", "width": 1200, "height": 630, "padding": 0.2, "background": "#FAFAFA" },
+    { "out": "email/logo-light.png", "asset": "logo", "variant": "light", "width": 200, "height": null },
+    { "out": "email/logo-light@2x.png", "asset": "logo", "variant": "light", "width": 400, "height": null },
+    { "out": "email/logo-dark.png", "asset": "logo", "variant": "dark", "width": 200, "height": null },
+    { "out": "email/logo-dark@2x.png", "asset": "logo", "variant": "dark", "width": 400, "height": null }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "description": "Brand colours per platform theme. Mirrors the platform design tokens (text-primary, brand-primary, bg-*). The platform repo re-checks these values against design/tokens.v1.json on every build.",
+  "themes": {
+    "light": {
+      "ink": "#18181B",
+      "accent": "#7C4DFF",
+      "backgrounds": { "bg-base": "#FAFAFA", "bg-surface": "#FFFFFF", "bg-subtle": "#F4F4F5" }
+    },
+    "dark": {
+      "ink": "#FFFFFF",
+      "accent": "#7C4DFF",
+      "backgrounds": { "bg-base": "#09090B", "bg-surface": "#18181B", "bg-subtle": "#27272A" }
+    },
+    "contrast-light": {
+      "ink": "#000000",
+      "accent": "#4C1D95",
+      "backgrounds": { "bg-base": "#FFFFFF", "bg-surface": "#FFFFFF" }
+    },
+    "contrast-dark": {
+      "ink": "#FFFFFF",
+      "accent": "#C4B5FD",
+      "backgrounds": { "bg-base": "#000000", "bg-surface": "#000000" }
+    }
+  }
+}

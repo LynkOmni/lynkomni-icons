@@ -1,0 +1,52 @@
+name: release
+
+# Runs when a pull request is merged to main: same gates as ci, then version, changelog and publish.
+# Generated files are never committed to main; they are built here and published in the package.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  packages: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: '@lynkomni'
+
+      - name: Install
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Gates, build and raster
+        run: |
+          npm run check
+          npm run build
+          npm run check:dist
+          npm test
+          npm run raster
+          npm run check:all
+
+      - name: Version, changelog and publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

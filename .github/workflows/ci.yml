@@ -1,0 +1,43 @@
+name: ci
+
+# Runs on every pull request. Nothing is published from here.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  brand-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Source gates (safe SVG, colours, contrast, naming, repo files)
+        run: npm run check
+
+      - name: Build
+        run: npm run build
+
+      - name: Output gates (checksums, view boxes, accessible names, size budgets)
+        run: npm run check:dist
+
+      - name: Tests
+        run: npm test
+
+      - name: Raster files (PNG, ICO)
+        run: npm run raster
+
+      - name: Raster gates
+        run: npm run check:all
