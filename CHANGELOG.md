@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.1...v1.0.2) (2026-11-06)
+
+
+### Bug Fixes
+
+* themed logo reads the brand-ink token ([4065980](https://github.com/LynkOmni/lynkomni-icons/commit/4065980d1f1f2402302ace801bc183aa1f2f2386))
+
 ## [1.0.1](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.0...v1.0.1) (2026-11-06)
 
 
