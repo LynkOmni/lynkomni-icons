@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.2.0...v1.3.0) (2026-11-06)
+
+
+### Features
+
+* add payment method icons (card, mobile money, bank, instant, wallet, digital asset) ([f58eb77](https://github.com/LynkOmni/lynkomni-icons/commit/f58eb77117077c1deb04c9b487169500e05c0693))
+
 # [1.2.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.1.0...v1.2.0) (2026-11-06)
 
 
