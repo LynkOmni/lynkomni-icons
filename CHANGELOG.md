@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.3...v1.1.0) (2026-11-06)
+
+
+### Features
+
+* add wordmark email images and the placement table ([d0c51d2](https://github.com/LynkOmni/lynkomni-icons/commit/d0c51d2acb0d2ba630484510a230732532ec83dc))
+
 ## [1.0.3](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.2...v1.0.3) (2026-11-06)
 
 
