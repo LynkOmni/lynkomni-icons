@@ -1,6 +1,6 @@
 {
   "name": "@lynkomni/icons",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "LynkOmni brand system: logos, wordmark and emblem for web, React, Android, iOS and email, generated from one manifest.",
   "type": "module",
   "sideEffects": false,

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.1.0...v1.2.0) (2026-11-06)
+
+
+### Features
+
+* add 43 icons (product marks, status icons, core UI icons) with gates, React, Android and iOS outputs ([7f65b87](https://github.com/LynkOmni/lynkomni-icons/commit/7f65b87c26d8e8b05582a4abb34b18bb058c8423))
+
 # [1.1.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.3...v1.1.0) (2026-11-06)
 
 
