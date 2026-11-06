@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.2...v1.0.3) (2026-11-06)
+
+
+### Bug Fixes
+
+* use a distinct logo-ink token for the themed logo ([40d5b87](https://github.com/LynkOmni/lynkomni-icons/commit/40d5b875354ec2e46a22b89e85f86af41fbcce9d))
+
 ## [1.0.2](https://github.com/LynkOmni/lynkomni-icons/compare/v1.0.1...v1.0.2) (2026-11-06)
 
 
