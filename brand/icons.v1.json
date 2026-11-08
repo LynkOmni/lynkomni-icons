@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "Product marks, status icons and core UI icons. One-colour outline icons on a 24 grid that take the surrounding text colour. Drafts for designer review.",
+  "description": "Product marks, status icons, core UI icons and the low-literacy tile set (lit-: twelve LynkPOS handheld tiles, always shown with the word beside them). One-colour outline icons on a 24 grid that take the surrounding text colour. Drafts for designer review.",
   "grid": 24,
   "strokeWidth": 2,
   "icons": [
@@ -297,6 +297,144 @@
       "group": "ui",
       "accessibleName": "Digital asset payment",
       "source": "src/ui/lynkomni-ui-pay-crypto.svg"
+    },
+    {
+      "id": "ui-globe",
+      "group": "ui",
+      "accessibleName": "Language and region",
+      "source": "src/ui/lynkomni-ui-globe.svg"
+    },
+    {
+      "id": "ui-grid",
+      "group": "ui",
+      "accessibleName": "App launcher",
+      "source": "src/ui/lynkomni-ui-grid.svg"
+    },
+    {
+      "id": "ui-copy",
+      "group": "ui",
+      "accessibleName": "Copy",
+      "source": "src/ui/lynkomni-ui-copy.svg"
+    },
+    {
+      "id": "ui-theme",
+      "group": "ui",
+      "accessibleName": "Theme",
+      "source": "src/ui/lynkomni-ui-theme.svg"
+    },
+    {
+      "id": "ui-signout",
+      "group": "ui",
+      "accessibleName": "Sign out",
+      "source": "src/ui/lynkomni-ui-signout.svg"
+    },
+    {
+      "id": "ui-chart",
+      "group": "ui",
+      "accessibleName": "Chart",
+      "source": "src/ui/lynkomni-ui-chart.svg"
+    },
+    {
+      "id": "ui-settings",
+      "group": "ui",
+      "accessibleName": "Settings",
+      "source": "src/ui/lynkomni-ui-settings.svg"
+    },
+    {
+      "id": "ui-bolt",
+      "group": "ui",
+      "accessibleName": "Action",
+      "source": "src/ui/lynkomni-ui-bolt.svg"
+    },
+    {
+      "id": "ui-mic",
+      "group": "ui",
+      "accessibleName": "Voice input",
+      "source": "src/ui/lynkomni-ui-mic.svg"
+    },
+    {
+      "id": "ui-doc",
+      "group": "ui",
+      "accessibleName": "Article",
+      "source": "src/ui/lynkomni-ui-doc.svg"
+    },
+    {
+      "id": "ui-undo",
+      "group": "ui",
+      "accessibleName": "Undo",
+      "source": "src/ui/lynkomni-ui-undo.svg"
+    },
+    {
+      "id": "lit-sell",
+      "group": "lowlit",
+      "accessibleName": "Sell",
+      "source": "src/lowlit/lynkomni-lit-sell.svg"
+    },
+    {
+      "id": "lit-agent",
+      "group": "lowlit",
+      "accessibleName": "Agent services",
+      "source": "src/lowlit/lynkomni-lit-agent.svg"
+    },
+    {
+      "id": "lit-collect",
+      "group": "lowlit",
+      "accessibleName": "Collection point",
+      "source": "src/lowlit/lynkomni-lit-collect.svg"
+    },
+    {
+      "id": "lit-bills",
+      "group": "lowlit",
+      "accessibleName": "Bills",
+      "source": "src/lowlit/lynkomni-lit-bills.svg"
+    },
+    {
+      "id": "lit-airtime-data",
+      "group": "lowlit",
+      "accessibleName": "Airtime and data",
+      "source": "src/lowlit/lynkomni-lit-airtime-data.svg"
+    },
+    {
+      "id": "lit-tickets",
+      "group": "lowlit",
+      "accessibleName": "Tickets",
+      "source": "src/lowlit/lynkomni-lit-tickets.svg"
+    },
+    {
+      "id": "lit-government",
+      "group": "lowlit",
+      "accessibleName": "Government payments",
+      "source": "src/lowlit/lynkomni-lit-government.svg"
+    },
+    {
+      "id": "lit-remittance",
+      "group": "lowlit",
+      "accessibleName": "Remittances",
+      "source": "src/lowlit/lynkomni-lit-remittance.svg"
+    },
+    {
+      "id": "lit-partner-finance",
+      "group": "lowlit",
+      "accessibleName": "Partner finance",
+      "source": "src/lowlit/lynkomni-lit-partner-finance.svg"
+    },
+    {
+      "id": "lit-customers-credit",
+      "group": "lowlit",
+      "accessibleName": "Customers and credit",
+      "source": "src/lowlit/lynkomni-lit-customers-credit.svg"
+    },
+    {
+      "id": "lit-reports",
+      "group": "lowlit",
+      "accessibleName": "Reports",
+      "source": "src/lowlit/lynkomni-lit-reports.svg"
+    },
+    {
+      "id": "lit-settings",
+      "group": "lowlit",
+      "accessibleName": "Settings",
+      "source": "src/lowlit/lynkomni-lit-settings.svg"
     }
   ]
 }

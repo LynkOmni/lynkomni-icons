@@ -16,7 +16,7 @@ const copy = () => {
 test('the real icon set passes every gate and has all three groups', () => {
   assert.deepEqual(checkIcons(ROOT), []);
   const { icons } = loadIcons(ROOT);
-  for (const g of ['states', 'ui', 'products']) assert.ok(icons.some((i) => i.group === g), g);
+  for (const g of ['states', 'ui', 'products', 'lowlit']) assert.ok(icons.some((i) => i.group === g), g);
   for (const s of STATUS_IDS) assert.ok(icons.some((i) => i.id === s), s);
 });
 
