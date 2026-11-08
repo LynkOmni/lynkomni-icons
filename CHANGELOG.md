@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.3.0...v1.4.0) (2026-11-08)
+
+
+### Features
+
+* add shell UI icons and the low-literacy tile set ([#2](https://github.com/LynkOmni/lynkomni-icons/issues/2)) ([468b437](https://github.com/LynkOmni/lynkomni-icons/commit/468b43756aa66c8dcb4b1181d480d5f95d24e1de))
+
 # [1.3.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.2.0...v1.3.0) (2026-11-06)
 
 
