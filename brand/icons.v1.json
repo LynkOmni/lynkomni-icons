@@ -365,6 +365,18 @@
       "source": "src/ui/lynkomni-ui-undo.svg"
     },
     {
+      "id": "ui-float",
+      "group": "ui",
+      "accessibleName": "Float",
+      "source": "src/ui/lynkomni-ui-float.svg"
+    },
+    {
+      "id": "ui-commission",
+      "group": "ui",
+      "accessibleName": "Commission",
+      "source": "src/ui/lynkomni-ui-commission.svg"
+    },
+    {
       "id": "lit-sell",
       "group": "lowlit",
       "accessibleName": "Sell",
