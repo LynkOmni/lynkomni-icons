@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.4.0...v1.5.0) (2026-11-09)
+
+
+### Features
+
+* add float and commission icons for agent points ([#3](https://github.com/LynkOmni/lynkomni-icons/issues/3)) ([4b76773](https://github.com/LynkOmni/lynkomni-icons/commit/4b76773b21ad0bbd0a1e0d2bbb30f2e2c506b251))
+
 # [1.4.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.3.0...v1.4.0) (2026-11-08)
 
 
