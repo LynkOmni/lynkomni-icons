@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.5.0...v1.6.0) (2026-11-10)
+
+
+### Features
+
+* add LynkMotion and LynkGuard product marks ([#4](https://github.com/LynkOmni/lynkomni-icons/issues/4)) ([a732f5d](https://github.com/LynkOmni/lynkomni-icons/commit/a732f5d2919a0334277264825f97a5d1f34f8765))
+
 # [1.5.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.4.0...v1.5.0) (2026-11-09)
 
 
