@@ -263,6 +263,18 @@
       "source": "src/products/lynkomni-product-suite.svg"
     },
     {
+      "id": "product-motion",
+      "group": "products",
+      "accessibleName": "Everyday tracking",
+      "source": "src/products/lynkomni-product-motion.svg"
+    },
+    {
+      "id": "product-guard",
+      "group": "products",
+      "accessibleName": "Vehicle and asset protection",
+      "source": "src/products/lynkomni-product-guard.svg"
+    },
+    {
       "id": "ui-pay-card",
       "group": "ui",
       "accessibleName": "Card payment",
