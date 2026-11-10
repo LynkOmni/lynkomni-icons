@@ -55,7 +55,7 @@ Everything above is bundled at build time. No product may load a brand file over
 
 ## Icons: product marks, status icons, core UI icons
 
-43 one-colour outline icons on a 24 grid, drawn as drafts for designer review. They use `currentColor`, so they take the surrounding text colour and follow every theme; there are no light/dark variants.
+One-colour outline icons on a 24 grid (the full list is brand/icons.v1.json), drawn as drafts for designer review. They use `currentColor`, so they take the surrounding text colour and follow every theme; there are no light/dark variants.
 
 - `status-*` (queued, sent, accepted, confirmed, failed) are the five states users ever see. Each has its own shape, so state is never shown by colour alone. Always show the word beside the icon, or give it an accessible name.
 - `ui-*` are the core app icons (home, search, menu, offline, sync, QR and so on).
