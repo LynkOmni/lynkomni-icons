@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.6.0...v1.7.0) (2026-11-11)
+
+
+### Features
+
+* add LynkAttend, LynkQueue and LynkSurvey product marks ([#5](https://github.com/LynkOmni/lynkomni-icons/issues/5)) ([dd541b6](https://github.com/LynkOmni/lynkomni-icons/commit/dd541b67070124136ec98687d2628d143d70bffc))
+
 # [1.6.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.5.0...v1.6.0) (2026-11-10)
 
 
