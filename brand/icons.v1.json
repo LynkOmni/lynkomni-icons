@@ -275,6 +275,24 @@
       "source": "src/products/lynkomni-product-guard.svg"
     },
     {
+      "id": "product-attend",
+      "group": "products",
+      "accessibleName": "Attendance",
+      "source": "src/products/lynkomni-product-attend.svg"
+    },
+    {
+      "id": "product-queue",
+      "group": "products",
+      "accessibleName": "Queue and tickets",
+      "source": "src/products/lynkomni-product-queue.svg"
+    },
+    {
+      "id": "product-survey",
+      "group": "products",
+      "accessibleName": "Surveys",
+      "source": "src/products/lynkomni-product-survey.svg"
+    },
+    {
       "id": "ui-pay-card",
       "group": "ui",
       "accessibleName": "Card payment",
