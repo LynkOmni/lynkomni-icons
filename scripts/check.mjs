@@ -99,6 +99,18 @@ export function sourceGates(root = ROOT) {
     if (!(a.minWidthPx > 0)) add(`asset ${a.id}`, 'needs minWidthPx');
     if (!(a.sizeBudgetBytes > 0)) add(`asset ${a.id}`, 'needs sizeBudgetBytes');
   }
+  for (const sm of manifest.small || []) {
+    const asset = manifest.assets.find((a) => a.id === sm.asset);
+    if (!asset) { add('manifest', `small version for unknown asset ${sm.asset}`); continue; }
+    if (!(sm.usedBelowPx > 0)) add(`small ${sm.asset}`, 'needs usedBelowPx');
+    for (const theme of ['light', 'dark']) {
+      const p = sm.sources?.[theme];
+      if (!p || !existsSync(join(root, p))) { add(`small ${sm.asset}`, `missing ${theme} source ${p}`); continue; }
+      referenced.add(basename(p));
+      for (const msg of svgSafetyProblems(readFileSync(join(root, p), 'utf8'))) add(p, msg);
+    }
+    try { loadAsset(root, { ...asset, sources: sm.sources }, themes); } catch (e) { add(`small ${sm.asset}`, e.message); }
+  }
   const logosDir = join(root, 'src/logos');
   for (const f of readdirSync(logosDir).filter((n) => n.endsWith('.svg'))) {
     if (!referenced.has(f)) add(`src/logos/${f}`, 'is not listed in brand/manifest.v1.json');
