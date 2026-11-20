@@ -183,7 +183,7 @@
     }
   ],
   "geometry": {
-    "note": "The locked emblem construction (owner, 2026-11-20). tests/geometry.test.mjs fails if the artwork drifts from it.",
+    "note": "The locked emblem construction (owner, 2026-11-20, final shape): gaps 72, centre gaps 180, bar 45\u00b0, the violet arc and the black bottom bar both 186 thick and mirror images about the bar, the lower dot level with the bottom bar and the arc's right side, a flat top level across the top gap. tests/geometry.test.mjs fails if the artwork drifts from it.",
     "units": "emblem source units (src/logos/lynkomni-emblem-light.svg)",
     "gap": 72,
     "hubGap": 180,
@@ -191,16 +191,18 @@
     "tolerance": 0.5,
     "hub": {
       "cx": 758.23,
-      "cy": 604.78,
+      "cy": 575.78,
       "r": 178
     },
     "lowerDot": {
-      "cx": 1101.23,
-      "cy": 947.78,
+      "cx": 1140.73,
+      "cy": 958.28,
       "r": 161.5
     },
     "smallMinGapPx": {
       "16": 1.25
-    }
+    },
+    "stroke": 186,
+    "flatTopY": 31.78
   }
 }

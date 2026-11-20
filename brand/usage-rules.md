@@ -70,7 +70,10 @@ This is the final LynkOmni emblem. Do not redraw it; any change needs the owner'
   straight cut; the two gaps around the lower dot are curves centred on the dot, so each is 72 along its whole length.
 - Every gap around the centre dot is 180: left, top, right, bottom and the corner between top and right.
 - The bar runs at exactly 45 degrees from the centre dot to the lower dot. Both dots are true circles.
-- The outline reads as one figure: the outer edge and the inner edge flow straight through the top gap.
+- The violet arc and the black bottom bar are both 186 thick. Around the lower dot they are mirror images of each other
+  across the bar, and the lower dot sits level with the bottom bar and with the arc's right side.
+- The top is flat and level: the black frame and the violet arc meet the top gap at exactly the same height, and the
+  line runs straight into the arc's curve at its highest point. The inner edge flows through the top gap as one curve.
 - The full logo carries the same emblem, scaled; the wordmark is unchanged.
 - At 16 to 24 px (browser tab, favicon) the small-size version is used: the same emblem with the gaps opened slightly
   so they stay visible. It is never used at 32 px or more.

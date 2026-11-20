@@ -115,3 +115,39 @@ test('small-size version: the gaps stay open at 16 px', () => {
     }
   }
 });
+
+// Final shape (owner, 2026-11-20): even strokes, the lower dot level with both strokes, and a flat, level top.
+const hits = (P, [ox, oy], [dx, dy]) => {
+  const out = [];
+  for (const [[ax, ay], [bx, by]] of edges(P)) {
+    const ex = bx - ax, ey = by - ay, den = dx * ey - dy * ex;
+    if (Math.abs(den) < 1e-12) continue;
+    const t = ((ax - ox) * ey - (ay - oy) * ex) / den, u = ((ax - ox) * dy - (ay - oy) * dx) / den;
+    if (t > 1e-6 && u >= 0 && u <= 1) out.push(t);
+  }
+  return out.sort((a, b) => a - b);
+};
+for (const theme of ['light', 'dark']) {
+  const e = parts(`src/logos/lynkomni-emblem-${theme}.svg`);
+  const c = [G.hub.cx, G.hub.cy];
+  test(`emblem ${theme}: the violet arc and the black bottom bar are both ${G.stroke} thick`, () => {
+    for (let a = -80; a <= 0; a += 10) {
+      const r = (a * Math.PI) / 180, h = hits(e.arc, c, [Math.cos(r), Math.sin(r)]);
+      near(h[1] - h[0], G.stroke, 1, `arc at ${a} degrees`);
+    }
+    const h = hits(e.frame, c, [0, 1]);
+    near(h[1] - h[0], G.stroke, 1, 'bottom bar');
+  });
+  test(`emblem ${theme}: the lower dot is level with the bottom bar and the arc's right side`, () => {
+    const maxY = (P) => Math.max(...P.map((p) => p[1])), maxX = (P) => Math.max(...P.map((p) => p[0]));
+    near(maxY(e.dots), maxY(e.frame), TOL, 'bottom line');
+    near(maxX(e.dots), maxX(e.arc), TOL, 'right line');
+  });
+  test(`emblem ${theme}: the flat top is level across the top gap`, () => {
+    const topNear = (P, x) => Math.min(...P.filter((p) => Math.abs(p[0] - x) < 1).map((p) => p[1]));
+    const fx = Math.max(...e.frame.filter((p) => p[1] < 300).map((p) => p[0]));
+    const ax = Math.min(...e.arc.filter((p) => p[1] < 300).map((p) => p[0]));
+    near(topNear(e.frame, fx), G.flatTopY, TOL, 'frame top at the gap');
+    near(topNear(e.arc, ax), G.flatTopY, TOL, 'arc top at the gap');
+  });
+}
