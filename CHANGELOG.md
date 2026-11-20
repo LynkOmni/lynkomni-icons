@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.7.1...v1.8.0) (2026-11-20)
+
+
+### Features
+
+* final locked emblem (gaps 72, centre gaps 180, bar 45°) with small-size version and geometry check ([#7](https://github.com/LynkOmni/lynkomni-icons/issues/7)) ([9c8d541](https://github.com/LynkOmni/lynkomni-icons/commit/9c8d541b6130e657689c5a148944eabf56b003a5))
+
 ## [1.7.1](https://github.com/LynkOmni/lynkomni-icons/compare/v1.7.0...v1.7.1) (2026-11-20)
 
 
