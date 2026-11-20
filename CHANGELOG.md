@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/LynkOmni/lynkomni-icons/compare/v1.8.0...v1.8.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* lighter emblem and logo files (same locked geometry, fewer points) ([#8](https://github.com/LynkOmni/lynkomni-icons/issues/8)) ([f131a23](https://github.com/LynkOmni/lynkomni-icons/commit/f131a23c086bdf6d04b0847c9c793f465938b724))
+
 # [1.8.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.7.1...v1.8.0) (2026-11-20)
 
 
