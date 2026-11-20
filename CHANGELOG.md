@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.8.1...v1.9.0) (2026-11-20)
+
+
+### Features
+
+* final emblem shape (flat level top, even 186 arc and bottom bar, mirrored around the lower dot) ([#9](https://github.com/LynkOmni/lynkomni-icons/issues/9)) ([b1946f3](https://github.com/LynkOmni/lynkomni-icons/commit/b1946f316fb2ee49c0b0dc184404b39ba47e4e45))
+
 ## [1.8.1](https://github.com/LynkOmni/lynkomni-icons/compare/v1.8.0...v1.8.1) (2026-11-20)
 
 
