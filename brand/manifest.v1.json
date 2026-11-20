@@ -2,14 +2,23 @@
   "version": 1,
   "package": "@lynkomni/icons",
   "description": "Every LynkOmni brand asset. The build and the gates read only this file and the SVGs it points to.",
-  "variants": ["light", "dark", "contrast-light", "contrast-dark", "mono"],
+  "variants": [
+    "light",
+    "dark",
+    "contrast-light",
+    "contrast-dark",
+    "mono"
+  ],
   "assets": [
     {
       "id": "emblem",
       "component": "LynkOmniEmblem",
       "kind": "emblem",
       "accessibleName": "LynkOmni",
-      "sources": { "light": "src/logos/lynkomni-emblem-light.svg", "dark": "src/logos/lynkomni-emblem-dark.svg" },
+      "sources": {
+        "light": "src/logos/lynkomni-emblem-light.svg",
+        "dark": "src/logos/lynkomni-emblem-dark.svg"
+      },
       "minWidthPx": 24,
       "sizeBudgetBytes": 20000
     },
@@ -18,7 +27,10 @@
       "component": "LynkOmniLogo",
       "kind": "logo",
       "accessibleName": "LynkOmni",
-      "sources": { "light": "src/logos/lynkomni-logo-light.svg", "dark": "src/logos/lynkomni-logo-dark.svg" },
+      "sources": {
+        "light": "src/logos/lynkomni-logo-light.svg",
+        "dark": "src/logos/lynkomni-logo-dark.svg"
+      },
       "minWidthPx": 96,
       "sizeBudgetBytes": 12000
     },
@@ -27,26 +39,168 @@
       "component": "LynkOmniWordmark",
       "kind": "wordmark",
       "accessibleName": "LynkOmni",
-      "sources": { "light": "src/logos/lynkomni-wordmark-light.svg", "dark": "src/logos/lynkomni-wordmark-dark.svg" },
+      "sources": {
+        "light": "src/logos/lynkomni-wordmark-light.svg",
+        "dark": "src/logos/lynkomni-wordmark-dark.svg"
+      },
       "minWidthPx": 80,
       "sizeBudgetBytes": 12000
     }
   ],
   "rasters": [
-    { "out": "web/favicon-32.png", "asset": "emblem", "variant": "light", "width": 32, "height": 32, "padding": 0.04 },
-    { "out": "web/favicon.ico", "type": "ico", "asset": "emblem", "variant": "light", "sizes": [16, 32, 48] },
-    { "out": "web/apple-touch-icon-180.png", "asset": "emblem", "variant": "light", "width": 180, "height": 180, "padding": 0.22, "background": "#FFFFFF" },
-    { "out": "web/pwa-192.png", "asset": "emblem", "variant": "light", "width": 192, "height": 192, "padding": 0.14, "background": "#FFFFFF" },
-    { "out": "web/pwa-512.png", "asset": "emblem", "variant": "light", "width": 512, "height": 512, "padding": 0.14, "background": "#FFFFFF" },
-    { "out": "web/pwa-maskable-512.png", "asset": "emblem", "variant": "light", "width": 512, "height": 512, "padding": 0.30, "background": "#FFFFFF" },
-    { "out": "web/og-1200x630.png", "asset": "logo", "variant": "light", "width": 1200, "height": 630, "padding": 0.2, "background": "#FAFAFA" },
-    { "out": "email/logo-light.png", "asset": "logo", "variant": "light", "width": 200, "height": null },
-    { "out": "email/logo-light@2x.png", "asset": "logo", "variant": "light", "width": 400, "height": null },
-    { "out": "email/logo-dark.png", "asset": "logo", "variant": "dark", "width": 200, "height": null },
-    { "out": "email/logo-dark@2x.png", "asset": "logo", "variant": "dark", "width": 400, "height": null },
-    { "out": "email/wordmark-light.png", "asset": "wordmark", "variant": "light", "width": 160, "height": null },
-    { "out": "email/wordmark-light@2x.png", "asset": "wordmark", "variant": "light", "width": 320, "height": null },
-    { "out": "email/wordmark-dark.png", "asset": "wordmark", "variant": "dark", "width": 160, "height": null },
-    { "out": "email/wordmark-dark@2x.png", "asset": "wordmark", "variant": "dark", "width": 320, "height": null }
-  ]
+    {
+      "out": "web/favicon-32.png",
+      "asset": "emblem",
+      "variant": "light",
+      "width": 32,
+      "height": 32,
+      "padding": 0.04,
+      "small": true
+    },
+    {
+      "out": "web/favicon.ico",
+      "type": "ico",
+      "asset": "emblem",
+      "variant": "light",
+      "sizes": [
+        16,
+        32,
+        48
+      ],
+      "small": true
+    },
+    {
+      "out": "web/apple-touch-icon-180.png",
+      "asset": "emblem",
+      "variant": "light",
+      "width": 180,
+      "height": 180,
+      "padding": 0.22,
+      "background": "#FFFFFF"
+    },
+    {
+      "out": "web/pwa-192.png",
+      "asset": "emblem",
+      "variant": "light",
+      "width": 192,
+      "height": 192,
+      "padding": 0.14,
+      "background": "#FFFFFF"
+    },
+    {
+      "out": "web/pwa-512.png",
+      "asset": "emblem",
+      "variant": "light",
+      "width": 512,
+      "height": 512,
+      "padding": 0.14,
+      "background": "#FFFFFF"
+    },
+    {
+      "out": "web/pwa-maskable-512.png",
+      "asset": "emblem",
+      "variant": "light",
+      "width": 512,
+      "height": 512,
+      "padding": 0.3,
+      "background": "#FFFFFF"
+    },
+    {
+      "out": "web/og-1200x630.png",
+      "asset": "logo",
+      "variant": "light",
+      "width": 1200,
+      "height": 630,
+      "padding": 0.2,
+      "background": "#FAFAFA"
+    },
+    {
+      "out": "email/logo-light.png",
+      "asset": "logo",
+      "variant": "light",
+      "width": 200,
+      "height": null
+    },
+    {
+      "out": "email/logo-light@2x.png",
+      "asset": "logo",
+      "variant": "light",
+      "width": 400,
+      "height": null
+    },
+    {
+      "out": "email/logo-dark.png",
+      "asset": "logo",
+      "variant": "dark",
+      "width": 200,
+      "height": null
+    },
+    {
+      "out": "email/logo-dark@2x.png",
+      "asset": "logo",
+      "variant": "dark",
+      "width": 400,
+      "height": null
+    },
+    {
+      "out": "email/wordmark-light.png",
+      "asset": "wordmark",
+      "variant": "light",
+      "width": 160,
+      "height": null
+    },
+    {
+      "out": "email/wordmark-light@2x.png",
+      "asset": "wordmark",
+      "variant": "light",
+      "width": 320,
+      "height": null
+    },
+    {
+      "out": "email/wordmark-dark.png",
+      "asset": "wordmark",
+      "variant": "dark",
+      "width": 160,
+      "height": null
+    },
+    {
+      "out": "email/wordmark-dark@2x.png",
+      "asset": "wordmark",
+      "variant": "dark",
+      "width": 320,
+      "height": null
+    }
+  ],
+  "small": [
+    {
+      "asset": "emblem",
+      "usedBelowPx": 32,
+      "note": "Same emblem with the gaps opened slightly so they stay visible at 16 to 24 px (browser tab, favicon). Never used at 32 px or more.",
+      "sources": {
+        "light": "src/logos/lynkomni-emblem-small-light.svg",
+        "dark": "src/logos/lynkomni-emblem-small-dark.svg"
+      }
+    }
+  ],
+  "geometry": {
+    "note": "The locked emblem construction (owner, 2026-11-20). tests/geometry.test.mjs fails if the artwork drifts from it.",
+    "units": "emblem source units (src/logos/lynkomni-emblem-light.svg)",
+    "gap": 72,
+    "hubGap": 180,
+    "barAngleDeg": 45,
+    "tolerance": 0.5,
+    "hub": {
+      "cx": 758.23,
+      "cy": 604.78,
+      "r": 178
+    },
+    "lowerDot": {
+      "cx": 1101.23,
+      "cy": 947.78,
+      "r": 161.5
+    },
+    "smallMinGapPx": {
+      "16": 1.25
+    }
+  }
 }

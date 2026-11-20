@@ -70,7 +70,7 @@ export async function raster(root = ROOT) {
   brand.rasters = {};
 
   for (const r of manifest.rasters || []) {
-    const svgRel = brand.assets[r.asset].variants[r.variant].svg;
+    const svgRel = (r.small ? brand.small[r.asset] : brand.assets[r.asset]).variants[r.variant].svg;
     const svgPath = join(dist, svgRel);
     let data;
     if (r.type === 'ico') {

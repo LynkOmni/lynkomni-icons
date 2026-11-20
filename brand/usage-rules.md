@@ -62,6 +62,20 @@ The brand must have at least 3:1 contrast against the background (WCAG 2.2 AA fo
 Watch out: in the dark theme the accent on `bg-subtle` is only 3.09 : 1, barely above the limit. Prefer
 `bg-base` or `bg-surface` for the logo in dark mode.
 
+## Locked emblem construction (owner, 2026-11-20)
+
+This is the final LynkOmni emblem. Do not redraw it; any change needs the owner's written approval.
+
+- The three gaps (frame to arc, arc to lower dot, frame to lower dot) are all 72 units wide. The top gap is a
+  straight cut; the two gaps around the lower dot are curves centred on the dot, so each is 72 along its whole length.
+- Every gap around the centre dot is 180: left, top, right, bottom and the corner between top and right.
+- The bar runs at exactly 45 degrees from the centre dot to the lower dot. Both dots are true circles.
+- The outline reads as one figure: the outer edge and the inner edge flow straight through the top gap.
+- The full logo carries the same emblem, scaled; the wordmark is unchanged.
+- At 16 to 24 px (browser tab, favicon) the small-size version is used: the same emblem with the gaps opened slightly
+  so they stay visible. It is never used at 32 px or more.
+- The numbers live in `brand/manifest.v1.json` "geometry"; `tests/geometry.test.mjs` fails if the artwork drifts.
+
 ## Offline and security
 
 - Bundle the files with the app. Never load a logo from a web address at run time.
@@ -70,5 +84,5 @@ Watch out: in the dark theme the accent on `bg-subtle` is only 3.09 : 1, barely 
 ## Not yet done
 
 - The LynkOmni name and these marks are not trademark-checked.
-- Favicon, share image and email images are generated automatically, but no designer has reviewed them
-  at small sizes.
+- Favicon, share image and email images are generated automatically (the favicon from the small-size version), but no
+  designer has reviewed them at small sizes.

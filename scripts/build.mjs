@@ -264,8 +264,23 @@ export function build({ root = ROOT, outDir = join(root, 'dist') } = {}) {
     files.set(`react/${autoName}.d.ts`, `export { ${autoName} as default, ${autoName} } from './index.js';\n`);
     componentNames.push(autoName);
 
-    if (asset.id === 'emblem') files.set('web/favicon.svg', faviconSvg(tree, vb, themes));
     core.assets[asset.id] = entry;
+  }
+
+  // Small-size versions (manifest "small"): same artwork with slightly wider gaps, for 16 to 24 px only.
+  // They are not separate assets: the favicon and the small rasters use them.
+  core.small = {};
+  for (const sm of manifest.small || []) {
+    const asset = manifest.assets.find((a) => a.id === sm.asset);
+    const { tree, vb } = loadAsset(root, { ...asset, sources: sm.sources }, themes);
+    const entry = { usedBelowPx: sm.usedBelowPx, viewBox: vb, variants: {} };
+    for (const variant of ALL_VARIANTS) {
+      const svgName = `lynkomni-${sm.asset}-small-${variant}.svg`;
+      files.set(`svg/${svgName}`, svgOf(tree, vb, asset.accessibleName, (role) => colourFor(variant, role, themes)));
+      entry.variants[variant] = { svg: `svg/${svgName}` };
+    }
+    if (sm.asset === 'emblem') files.set('web/favicon.svg', faviconSvg(tree, vb, themes));
+    core.small[sm.asset] = entry;
   }
 
   componentNames.sort();
