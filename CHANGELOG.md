@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/LynkOmni/lynkomni-icons/compare/v1.7.0...v1.7.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* equal emblem gaps and one continuous outline ([#6](https://github.com/LynkOmni/lynkomni-icons/issues/6)) ([451335e](https://github.com/LynkOmni/lynkomni-icons/commit/451335e8029590682cb9a3f948d1326e4e2528d6))
+
 # [1.7.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.6.0...v1.7.0) (2026-11-11)
 
 
