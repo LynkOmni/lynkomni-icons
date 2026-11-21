@@ -293,6 +293,138 @@
       "source": "src/products/lynkomni-product-survey.svg"
     },
     {
+      "id": "product-acc",
+      "group": "products",
+      "accessibleName": "Accounting",
+      "source": "src/products/lynkomni-product-acc.svg"
+    },
+    {
+      "id": "product-inv",
+      "group": "products",
+      "accessibleName": "Invoicing",
+      "source": "src/products/lynkomni-product-inv.svg"
+    },
+    {
+      "id": "product-crm",
+      "group": "products",
+      "accessibleName": "Customers",
+      "source": "src/products/lynkomni-product-crm.svg"
+    },
+    {
+      "id": "product-ops",
+      "group": "products",
+      "accessibleName": "Office bundle",
+      "source": "src/products/lynkomni-product-ops.svg"
+    },
+    {
+      "id": "product-stat",
+      "group": "products",
+      "accessibleName": "Analytics",
+      "source": "src/products/lynkomni-product-stat.svg"
+    },
+    {
+      "id": "product-exchange",
+      "group": "products",
+      "accessibleName": "Currency exchange",
+      "source": "src/products/lynkomni-product-exchange.svg"
+    },
+    {
+      "id": "product-vote",
+      "group": "products",
+      "accessibleName": "Voting",
+      "source": "src/products/lynkomni-product-vote.svg"
+    },
+    {
+      "id": "product-hr",
+      "group": "products",
+      "accessibleName": "Staff management",
+      "source": "src/products/lynkomni-product-hr.svg"
+    },
+    {
+      "id": "product-project",
+      "group": "products",
+      "accessibleName": "Projects",
+      "source": "src/products/lynkomni-product-project.svg"
+    },
+    {
+      "id": "product-school",
+      "group": "products",
+      "accessibleName": "School management",
+      "source": "src/products/lynkomni-product-school.svg"
+    },
+    {
+      "id": "product-academy",
+      "group": "products",
+      "accessibleName": "Courses & training",
+      "source": "src/products/lynkomni-product-academy.svg"
+    },
+    {
+      "id": "product-property",
+      "group": "products",
+      "accessibleName": "Property management",
+      "source": "src/products/lynkomni-product-property.svg"
+    },
+    {
+      "id": "product-files",
+      "group": "products",
+      "accessibleName": "Documents & signing",
+      "source": "src/products/lynkomni-product-files.svg"
+    },
+    {
+      "id": "product-jobs",
+      "group": "products",
+      "accessibleName": "Jobs & hiring",
+      "source": "src/products/lynkomni-product-jobs.svg"
+    },
+    {
+      "id": "product-faq",
+      "group": "products",
+      "accessibleName": "Questions & answers",
+      "source": "src/products/lynkomni-product-faq.svg"
+    },
+    {
+      "id": "product-support",
+      "group": "products",
+      "accessibleName": "Help & support",
+      "source": "src/products/lynkomni-product-support.svg"
+    },
+    {
+      "id": "product-status",
+      "group": "products",
+      "accessibleName": "Service status",
+      "source": "src/products/lynkomni-product-status.svg"
+    },
+    {
+      "id": "product-feedback",
+      "group": "products",
+      "accessibleName": "Product feedback",
+      "source": "src/products/lynkomni-product-feedback.svg"
+    },
+    {
+      "id": "product-safety",
+      "group": "products",
+      "accessibleName": "Safety & reporting",
+      "source": "src/products/lynkomni-product-safety.svg"
+    },
+    {
+      "id": "product-flow",
+      "group": "products",
+      "accessibleName": "Automations",
+      "source": "src/products/lynkomni-product-flow.svg"
+    },
+    {
+      "id": "product-driver",
+      "group": "products",
+      "accessibleName": "Hardware drivers",
+      "source": "src/products/lynkomni-product-driver.svg"
+    },
+    {
+      "id": "product-id",
+      "group": "products",
+      "accessibleName": "Account ID",
+      "source": "src/products/lynkomni-product-id.svg"
+    },
+    {
       "id": "ui-pay-card",
       "group": "ui",
       "accessibleName": "Card payment",
