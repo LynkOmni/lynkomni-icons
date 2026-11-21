@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.9.0...v1.10.0) (2026-11-21)
+
+
+### Features
+
+* add own product marks for 22 Lynk names ([#10](https://github.com/LynkOmni/lynkomni-icons/issues/10)) ([a323bc3](https://github.com/LynkOmni/lynkomni-icons/commit/a323bc3db97fba78a546461c2895e9ffe27ad5c1))
+
 # [1.9.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.8.1...v1.9.0) (2026-11-20)
 
 
