@@ -425,6 +425,12 @@
       "source": "src/products/lynkomni-product-id.svg"
     },
     {
+      "id": "product-bet",
+      "group": "products",
+      "accessibleName": "Betting",
+      "source": "src/products/lynkomni-product-bet.svg"
+    },
+    {
       "id": "ui-pay-card",
       "group": "ui",
       "accessibleName": "Card payment",
