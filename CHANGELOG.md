@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.10.0...v1.11.0) (2026-11-24)
+
+
+### Features
+
+* add the LynkBet product mark ([#11](https://github.com/LynkOmni/lynkomni-icons/issues/11)) ([b89100b](https://github.com/LynkOmni/lynkomni-icons/commit/b89100b993fe15184d58f545a88a35958b048732))
+
 # [1.10.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.9.0...v1.10.0) (2026-11-21)
 
 
