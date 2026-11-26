@@ -293,6 +293,30 @@
       "source": "src/products/lynkomni-product-guard.svg"
     },
     {
+      "id": "product-trace",
+      "group": "products",
+      "accessibleName": "Order and delivery tracking",
+      "source": "src/products/lynkomni-product-trace.svg"
+    },
+    {
+      "id": "product-sentry",
+      "group": "products",
+      "accessibleName": "Theft and incident alerts",
+      "source": "src/products/lynkomni-product-sentry.svg"
+    },
+    {
+      "id": "product-cctv",
+      "group": "products",
+      "accessibleName": "CCTV",
+      "source": "src/products/lynkomni-product-cctv.svg"
+    },
+    {
+      "id": "product-gate",
+      "group": "products",
+      "accessibleName": "Gate",
+      "source": "src/products/lynkomni-product-gate.svg"
+    },
+    {
       "id": "product-attend",
       "group": "products",
       "accessibleName": "Attendance",
