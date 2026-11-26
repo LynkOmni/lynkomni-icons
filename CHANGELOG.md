@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.11.0...v1.12.0) (2026-11-26)
+
+
+### Features
+
+* add the ui-mail, ui-at and ui-phone icons for choosing how to sign in ([#12](https://github.com/LynkOmni/lynkomni-icons/issues/12)) ([5b04917](https://github.com/LynkOmni/lynkomni-icons/commit/5b04917a36972c92401e8e5dcbee7cf6349fa5fe))
+
 # [1.11.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.10.0...v1.11.0) (2026-11-24)
 
 
