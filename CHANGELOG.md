@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.12.0...v1.13.0) (2026-11-26)
+
+
+### Features
+
+* add the LynkTrace, LynkSentry, LynkCCTV and LynkGate product marks ([#13](https://github.com/LynkOmni/lynkomni-icons/issues/13)) ([f50fc9e](https://github.com/LynkOmni/lynkomni-icons/commit/f50fc9e5fa3cb5699209c3adb79eb7d22a1c8807))
+
 # [1.12.0](https://github.com/LynkOmni/lynkomni-icons/compare/v1.11.0...v1.12.0) (2026-11-26)
 
 
