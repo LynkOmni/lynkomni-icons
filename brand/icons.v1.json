@@ -107,6 +107,24 @@
       "source": "src/ui/lynkomni-ui-user.svg"
     },
     {
+      "id": "ui-mail",
+      "group": "ui",
+      "accessibleName": "Email",
+      "source": "src/ui/lynkomni-ui-mail.svg"
+    },
+    {
+      "id": "ui-at",
+      "group": "ui",
+      "accessibleName": "Username",
+      "source": "src/ui/lynkomni-ui-at.svg"
+    },
+    {
+      "id": "ui-phone",
+      "group": "ui",
+      "accessibleName": "Phone number",
+      "source": "src/ui/lynkomni-ui-phone.svg"
+    },
+    {
       "id": "ui-lock",
       "group": "ui",
       "accessibleName": "Locked",
